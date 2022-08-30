@@ -17,6 +17,6 @@ jobs:
       - run: ./gradlew build
       - uses: Kir-Antipov/mc-publish@v3.1
         with:
-          modrinth-id: te3HwXEX
+          modrinth-id: UxGbCy5M
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
