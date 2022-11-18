@@ -31,6 +31,7 @@ public class DamageControlConfigManager {
     public static final TrackedValue<Boolean> FREEZE_DAMAGE = (TrackedValue<Boolean>) CONFIG.getValue(List.of("freeze_damage"));
     public static final TrackedValue<Boolean> FALLING_STALACTITE_DAMAGE = (TrackedValue<Boolean>) CONFIG.getValue(List.of("falling_stalactite_damage"));
     public static final TrackedValue<Boolean> STALAGMITE_DAMAGE = (TrackedValue<Boolean>) CONFIG.getValue(List.of("stalagmite_damage"));
+    public static final TrackedValue<Boolean> MOB_DAMAGE = (TrackedValue<Boolean>) CONFIG.getValue(List.of("mob_damage"));
 
     public static final TrackedValue<String> MOBS_NO_DAMAGE = (TrackedValue<String>) CONFIG.getValue(List.of("mobs_no_damage"));
 }
