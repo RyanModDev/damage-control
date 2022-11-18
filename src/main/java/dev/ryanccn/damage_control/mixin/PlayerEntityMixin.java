@@ -88,6 +88,9 @@ public class PlayerEntityMixin {
         } else if (source.equals(DamageSource.STALAGMITE) && !DamageControlConfigManager.STALAGMITE_DAMAGE.value()) {
             cir.setReturnValue(false);
             cir.cancel();
+        } else if (source.getAttacker() != null && !DamageControlConfigManager.MOB_DAMAGE.value()) {
+            cir.setReturnValue(false);
+            cir.cancel();
         } else if (source.getAttacker() != null) {
             String[] noDamageMobs = DamageControlConfigManager.MOBS_NO_DAMAGE.value().split(",");
             String attackerId = Registry.ENTITY_TYPE.getId(source.getAttacker().getType()).toString();
