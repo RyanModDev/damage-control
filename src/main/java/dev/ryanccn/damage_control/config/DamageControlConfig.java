@@ -68,6 +68,9 @@ public class DamageControlConfig extends WrappedConfig {
 
     @Comment("Toggle damage from stalagmite")
     public final boolean stalagmite_damage = true;
+    
+    @Comment("Toggle damage from all mobs")
+    public final boolean mob_damage = true;
 
     @Comment("Mobs to disable damage")
     public final String mobs_no_damage = "";
